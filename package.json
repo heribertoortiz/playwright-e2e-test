@@ -2,7 +2,10 @@
   "name": "playwright-e2e-test",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "demo:firefox": "npx playwright test tests/demo/first-test.spec.ts --project=firefox --headed",
+    "generate appointment:firefox": "npx playwright test tests/functional/make.appointment.spec.ts --project=firefox --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
