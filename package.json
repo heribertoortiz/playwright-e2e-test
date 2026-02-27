@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "demo:firefox": "npx playwright test tests/demo/first-test.spec.ts --project=firefox --headed",
-    "generate appointment:firefox": "npx playwright test tests/functional/make.appointment.spec.ts --project=firefox --headed"
+    "demo": "npx playwright test tests/demo/first-test.spec.ts --project=firefox --headed",
+    "login": "npx playwright test tests/functional/login.spec.ts --project=firefox --headed",
+    "make-apt": "npx playwright test tests/functional/make.appointment.spec.ts --project=firefox --headed",
+    "inventory": "npx playwright test tests/functional/inventory.spec.ts --project=firefox --headed"
   },
   "keywords": [],
   "author": "",
