@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "demo:global": "npx playwright test tests/functional/login.spec.ts",
+    "pw-basic-cap": "npx playwright test tests/demo/pw.basic.make.aptm.spec.ts --headed",
     "demo": "npx playwright test tests/demo/first-test.spec.ts --project=firefox --headed",
     "login": "npx playwright test tests/functional/login.spec.ts --project=firefox --headed",
     "make-apt": "npx playwright test tests/functional/make.appointment.spec.ts --project=firefox --headed",
@@ -14,6 +16,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.0"
+    "@types/node": "^25.3.0",
+    "allure-playwright": "^3.5.0",
+    "dotenv": "^17.3.1"
   }
 }
